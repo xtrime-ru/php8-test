@@ -1,0 +1,12 @@
+version: '3.5'
+services:
+  php8-test:
+    image: php:8.0-rc-cli
+    container_name: php8-test
+    volumes:
+      - ./:/app
+      - ./opcache.ini://usr/local/etc/php/conf.d/opcache.ini
+    working_dir: /app
+    entrypoint: "php bench.php"
+      
+    

@@ -1,7 +1,13 @@
 # php8-test
 Build docker container with php 8 and jit for tests.
 
+## Fast start
+
+1. Download existing image and run bench.php in it: `docker-compose -f docker-compose-fast.yml up`
+
 ## Setup
+Create a container with custom extensions and development webserver.
+
 1. Build `docker-compose build`
 1. Start container in background `docker-compose up -d`
 1. Connect `bash docker-exec.sh`
